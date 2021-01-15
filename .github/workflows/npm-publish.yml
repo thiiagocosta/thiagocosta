@@ -33,5 +33,5 @@ jobs:
     - run: yarn test
     - name: Webhook
       uses: thiiagocosta/thiagocosta@main
-      env:
-        webhook_url: https://webhooks.hostinger.com/deploy/5ca270934cd57233848b3ac5a77cb63f
+      # env:
+      #   webhook_url: https://webhooks.hostinger.com/deploy/5ca270934cd57233848b3ac5a77cb63f

@@ -33,7 +33,7 @@ jobs:
     - run: yarn test
     # - run: "curl --location --request GET 'https://webhooks.hostinger.com/deploy/5ca270934cd57233848b3ac5a77cb63f' --header 'Content-Type: application/x-www-form-urlencoded' --data-urlencode 'Content-type=application/json'"
     - name: Webhook
-      uses: actions/thiiagocosta@thiagocosta
+      uses: thiiagocosta@thiagocosta
       with:
         url: "https://webhooks.hostinger.com/deploy/5ca270934cd57233848b3ac5a77cb63f"
         json: '{ "repository": "${{github.event.repository.full_name}}", "number": "${{github.event.number}}", "created_at": "${{github.event.pull_request.created_at}}", "updated_at": "${{github.event.pull_request.updated_at}}" }'

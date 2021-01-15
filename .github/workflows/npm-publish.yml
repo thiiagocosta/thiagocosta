@@ -32,4 +32,4 @@ jobs:
     # - run: yarn lint
     - run: yarn test
     - name: Webhook
-      run: "curl --location --request POST 'https://webhooks.hostinger.com/deploy/5ca270934cd57233848b3ac5a77cb63f' --header 'Content-Type: application/json' --data-raw '{ \"event\": \"push\", \"repository\": \"thiiagocosta/thiagocosta\" }'"
+      run: "curl --location --request POST 'https://webhooks.hostinger.com/deploy/5ca270934cd57233848b3ac5a77cb63f' --header 'Content-Type: application/json' --data-raw '{ \"event\": \"$GITHUB_EVENT_NAME\", \"repository\": \"$GITHUB_REPOSITORY\", \"commit\": \"$GITHUB_SHA\", \"ref\": \"$GITHUB_REF\", \"head\": \"$GITHUB_HEAD_REF\", \"workflow\": \"$GITHUB_WORKFLOW\"}'"

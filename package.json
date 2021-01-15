@@ -1,0 +1,8 @@
+{
+  "name": "thiagocosta",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:thiiagocosta/thiagocosta.git",
+  "author": "Thiago Costa <thiiagoc@gmail.com>",
+  "license": "MIT"
+}
